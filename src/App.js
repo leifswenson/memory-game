@@ -9,13 +9,24 @@ import "./App.css";
 
 class App extends Component {
   
+  
+  state = {
+    count: 0
+  };
+
+  // incrementScore increases this.state.count by 1
+  handleIncrement = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+
 // Score starts at 0
 // high score will start at 0
 // empty array will hold gusses
+// 
 // User will click on a player
 // if clicked player is an index of the array score will reset array will empty and score will be checked with total score
 // if clicked player is not an index of array, add to score 
-// 
+// cards will get shuffled 
 
 
 
