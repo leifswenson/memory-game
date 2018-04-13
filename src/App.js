@@ -9,39 +9,56 @@ import "./App.css";
 
 class App extends Component {
   
-  
+  // Score starts at 0
+  // high score will start at 0
+  // empty array will hold gusses
   state = {
-    count: 0
+    score: 0,
+    topScore: 0,
+    guessed: []
   };
 
-  // incrementScore increases this.state.count by 1
-  handleIncrement = () => {
-    this.setState({ count: this.state.count + 1 });
+  
+  // function to handle when a user clicks on a player
+  handleClick = (id) => {
+    
+    // if clicked player is not an index of array, add to score
+    if (this.state.guessed.indexOf(id) === -1) {
+      //push into guessed array
+      this.state.guessed.push(id);
+      // increment score
+      // cards will get shuffled 
+      this.setState({ score: this.state.score + 1 });
+    } else {
+      // if clicked player is an index of the array score will reset array will empty and score will be checked with total score
+      // show top score
+      this.setState({topScore: this.state.score});
+      // cards will get shuffled 
+    }
+    console.log(this.state.guessed);
+
+    
   };
 
-// Score starts at 0
-// high score will start at 0
-// empty array will hold gusses
-// 
-// User will click on a player
-// if clicked player is an index of the array score will reset array will empty and score will be checked with total score
-// if clicked player is not an index of array, add to score 
-// cards will get shuffled 
+
 
 
 
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar 
+          score={this.score}
+          topScore={this.topScore}
+        />
         <Jumbotron />
           <Section>
           {players.map(player => (
             <PlayerCard
               id={player.id}
-              key={player.id}
               name={player.name}
               image={player.image}
+              handleClick={this.handleClick}
             />
           ))}
           </Section>
