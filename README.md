@@ -3,7 +3,7 @@
 [Deployed App](https://leifswenson.github.io/memory-game/)
 
 ### Description
-Click on an image to earn points, but don't click on any more than once!  Click all 12 images one time and you win!
+Click on a players image to earn points, but don't click on any more than once!  Click all 12 images one time and you win!
 
 
 ### Technology

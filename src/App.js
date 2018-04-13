@@ -22,18 +22,28 @@ class App extends Component {
   // function to handle when a user clicks on a player
   handleClick = (id) => {
     
-    // if clicked player is not an index of array, add to score
+    // if clicked player is not an index of array
     if (this.state.guessed.indexOf(id) === -1) {
-      //push into guessed array
-      this.state.guessed.push(id);
-      // increment score
-      // cards will get shuffled 
-      this.setState({ score: this.state.score + 1 });
+      
+      if (this.state.score === 12) {
+        this.setState({score: 0});
+        this.setState({guessed: []});
+      } else {
+        //push into guessed array
+        this.state.guessed.push(id);
+        // increment score
+        this.setState({ score: this.state.score + 1 });
+      }
+      
+      // shuffle cards ??
     } else {
       // if clicked player is an index of the array score will reset array will empty and score will be checked with total score
       // show top score
       this.setState({topScore: this.state.score});
-      // cards will get shuffled 
+      // reset score
+      this.setState({score: 0});
+      this.setState({guessed: []});
+      // shuffle cards ??
     }
     console.log(this.state.guessed);
 
@@ -48,8 +58,8 @@ class App extends Component {
     return (
       <div>
         <Navbar 
-          score={this.score}
-          topScore={this.topScore}
+          score={this.state.score}
+          topScore={this.state.topScore}
         />
         <Jumbotron />
           <Section>
