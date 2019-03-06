@@ -2,73 +2,73 @@
   {
     "id": 1,
     "name": "TIGER WOODS",
-    "image": "./assets/images/01_tiger.png",
+    "image": "http://a.espncdn.com/prod/styles/pagetype/otl/20180320_dominant20/img/01_tiger.png",
     "clicked": false
   },
   {
     "id": 2,
     "name": "LEBRON JAMES",
-    "image": "./assets/images/02_lebron.png",
+    "image": "http://a.espncdn.com/prod/styles/pagetype/otl/20180320_dominant20/img/02_lebron.png",
     "clicked": false
   },
   {
     "id": 3,
     "name": "PEYTON MANNING",
-    "image": "./assets/images/03_peyton.png",
+    "image": "http://a.espncdn.com/prod/styles/pagetype/otl/20180320_dominant20/img/03_peyton.png",
     "clicked": false
   },
   {
     "id": 4,
     "name": "ROGER FEDERER",
-    "image": "./assets/images/05_federer.png",
+    "image": "http://a.espncdn.com/prod/styles/pagetype/otl/20180320_dominant20/img/05_federer.png",
     "clicked": false
   },
   {
     "id": 5,
     "name": "ANNIKA SORENSTAM",
-    "image": "./assets/images/06_annika.png",
+    "image": "http://a.espncdn.com/prod/styles/pagetype/otl/20180320_dominant20/img/06_annika_v2.png",
     "clicked": false
   },
   {
     "id": 6,
     "name": "FLOYD MAYWEATHER",
-    "image": "./assets/images/08_mayweather.png",
+    "image": "http://a.espncdn.com/prod/styles/pagetype/otl/20180320_dominant20/img/08_mayweather.png",
     "clicked": false
   },
   {
     "id": 7,
     "name": "USAIN BOLT",
-    "image": "./assets/images/10_bolt.png",
+    "image": "http://a.espncdn.com/prod/styles/pagetype/otl/20180320_dominant20/img/10_bolt.png",
     "clicked": false
   },
   {
     "id": 8,
     "name": "TOM BRADY",
-    "image": "./assets/images/20_brady.png",
+    "image": "http://a.espncdn.com/prod/styles/pagetype/otl/20180320_dominant20/img/20_brady.png",
     "clicked": false
   },
   {
     "id": 9,
     "name": "SERENA WILLIAMS",
-    "image": "./assets/images/12_serena.png",
+    "image": "http://a.espncdn.com/prod/styles/pagetype/otl/20180320_dominant20/img/12_serena.png",
     "clicked": false
   },
   {
     "id": 10,
     "name": "NOVAK DJOKOVIC",
-    "image": "./assets/images/15_djokovic.png",
+    "image": "http://a.espncdn.com/prod/styles/pagetype/otl/20180320_dominant20/img/15_djokovic.png",
     "clicked": false
   },
   {
     "id": 11,
     "name": "ALLYSON FELIX",
-    "image": "./assets/images/16_felix.png",
+    "image": "http://a.espncdn.com/prod/styles/pagetype/otl/20180320_dominant20/img/16_felix.png",
     "clicked": false
   },
   {
     "id": 12,
     "name": "BARRY BONDS",
-    "image": "./assets/images/17_bonds.png",
+    "image": "http://a.espncdn.com/prod/styles/pagetype/otl/20180320_dominant20/img/17_bonds.png",
     "clicked": false
   }
 ]
