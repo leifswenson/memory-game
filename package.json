@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://leifswenson.github.io/memory-game/",
   "dependencies": {
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^1.2.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-scripts": "1.1.4"
