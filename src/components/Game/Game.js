@@ -14,6 +14,19 @@ class Game extends Component {
     guessed: []
   };
 
+  componentDidMount() {
+    this.setState({ players: this.shufflePlayers(this.state.players) });
+  }
+
+  // function to shuffle player cards
+  shufflePlayers = a => {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  };
+
   // function to handle when a user clicks on a player
   handleClick = id => {
     // if clicked player is not an index of array
@@ -28,7 +41,8 @@ class Game extends Component {
         this.setState({ score: this.state.score + 1 });
       }
 
-      // shuffle cards ??
+      // shuffle cards
+      this.shufflePlayers(this.state.players);
     } else {
       // if clicked player is an index of the array score will reset array will empty and score will be checked with total score
       // show top score
@@ -47,7 +61,7 @@ class Game extends Component {
         <Navbar score={this.state.score} topScore={this.state.topScore} />
         <Jumbotron />
         <Section>
-          {players.map(player => (
+          {this.state.players.map(player => (
             <PlayerCard
               key={player.id}
               id={player.id}
